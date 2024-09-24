@@ -3,9 +3,9 @@
  ele se destaca pelo uso do query builder <strong>Knex</strong> para construção dinâmica de consultas SQL.
 
 >[!NOTE]
->Para garantir a consistência do código, foi implementado o **ESLint**, responsável pela padronização e melhoria das práticas de desenvolvimento. utilize o comando "run lint" para formatar o projeto.
+>Para garantir a consistência do código, foi implementado o **ESLint**, responsável pela padronização e melhoria das práticas de desenvolvimento. utilize o comando `run lint` para formatar o projeto.
 
-<h2>Novos Recursos</h2>
+<h2>Novos Recursos 23/09</h2>
 <h4>Adicionamos novos recursos e melhorias para facilitar o desenvolvimento:</h4>
 
 - **Arquivo `env.example`**: Modelo de configuração para variáveis de ambiente.
@@ -17,3 +17,10 @@
 npm run knex -- migrate:make create-document-table
 ```
 
+<h2> ✨ Updates! (24/09 </h2> 
+
+- adicionado cookies e sessionId para identificar e autorizar as transações
+- tratativa de erro caso o acesso seja negado quando é feita uma requisição sem a session_id
+- middlewares adicionados
+- apis de transactions (listar todas as transactions, criar e encontrar transaction específica.)
+  
