@@ -4,8 +4,7 @@ import { env } from './env'
 
 
 
-export const config: { [key: string]: Knex.Config } = {
-  development: {
+export const config:  Knex.Config  = {
     client: 'sqlite3', 
     connection: {
       filename: env.DATABASE_URL
@@ -15,8 +14,7 @@ export const config: { [key: string]: Knex.Config } = {
       extension:'ts'
     },
     useNullAsDefault: true, 
-  },
 }
 
 
-export const knex = setupKnex(config.development)
+export const knex = setupKnex(config)
