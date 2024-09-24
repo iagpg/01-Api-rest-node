@@ -1,3 +1,4 @@
 node.modules
-tmp/app.db
+db/app.db
 tutorial.txt
+.env
