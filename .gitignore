@@ -1,4 +1,18 @@
+#dependencies
 node.modules
-db/app.db
+
+#database
+db/*.db
+
+#tutorial
 tutorial.txt
+
+#environment
 .env
+.env.test
+
+#formater configuration
+biome.json
+
+# build
+build

@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": " tsx ./node_modules/knex/bin/cli.js",
-    "lint": "eslint src/**/*.ts --fix"
+    "lint": "eslint src/**/*.ts --fix",
+    "test": "vitest",
+    "build":" tsup src -d build"
   },
   "keywords": [],
   "author": "",
@@ -14,11 +16,15 @@
   "devDependencies": {
     "@eslint/js": "^9.11.0",
     "@types/node": "^22.5.5",
+    "@types/supertest": "^6.0.2",
     "eslint": "^9.11.0",
     "globals": "^15.9.0",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "^5.5.2",
-    "typescript-eslint": "^8.6.0"
+    "typescript-eslint": "^8.6.0",
+    "vitest": "^2.1.1"
   },
   "dependencies": {
     "@fastify/cookie": "^10.0.1",

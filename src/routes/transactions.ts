@@ -15,9 +15,9 @@ const createTransactionBodySchema = z.object({
 })
 export async function transactionsRoutes(app: FastifyInstance){ 
     //triggers for all requests inside the plugin
-    app.addHook('preHandler',async (request)=>{
-        console.log(`${request.method}`)
-    })
+    // app.addHook('preHandler',async (request)=>{
+    //     console.log(`${request.method}`)
+    // })
     // list all transactions
     app.get('/',{
         preHandler: [checkSessionIdExist]
