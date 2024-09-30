@@ -16,6 +16,11 @@ export default [
     }
   },
   {
+    ignores: [
+        "build/**/*",     // ignore all contents in and under `build/` directory but not the `build/` directory itself
+    ]
+  },
+  {
     languageOptions: {
       globals: globals.browser,
     },
