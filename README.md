@@ -5,6 +5,22 @@
 >[!NOTE]
 >Para garantir a consistência do código, foi implementado o **ESLint**, responsável pela padronização e melhoria das práticas de desenvolvimento. utilize o comando `run lint` para formatar o projeto.
 
+<h4>O projeto tem como objetivo facilitar o controle de dieta. Cada usuário pode criar, deletar e visualizar suas refeições cadastradas.</h4>
+
+<h3> Requisitos Funcionais </h3>
+
+- [x] O usuário pode criar uma nova refeição contendo nome, descrição e definir se a refeição está dentro ou fora da dieta.
+- [x] O usuário deve poder listar todas as refeições criadas
+- [x] o usuário pode visualizar uma refeição específica
+- [x] O usuário deve obter um resumo das refeições:
+
+
+<h3> Regras de Negócio </h3>
+
+- [x] O usuário so pode visualizar refeições que pertence a ele.
+- [x] Deve ser possível identificar os usuários entre as requisições.
+ 
+  </br>
 <h2>Novos Recursos 23/09</h2>
 <h4>Adicionamos novos recursos e melhorias para facilitar o desenvolvimento:</h4>
 
@@ -16,11 +32,23 @@
 ```javascript
 npm run knex -- migrate:make create-document-table
 ```
+</br>
+<h2> ✨ Updates! (24/09) </h2> 
+</br>
 
-<h2> ✨ Updates! (24/09 </h2> 
-
-- adicionado cookies e sessionId para identificar e autorizar as transações
+- adicionado cookies e sessionId para identificar e autorizar a gerenciamento das refeições
 - tratativa de erro caso o acesso seja negado quando é feita uma requisição sem a session_id
 - middlewares adicionados
-- apis de transactions (listar todas as transactions, criar e encontrar transaction específica.)
+- apis de transactions (listar todas as refeições, criar e encontrar refeições específicas.)
+
+</br>
+<h2> 🔔 última atualização  (2/10) </h2>
+</br>
+
+- foi adicionado um summário onde mostra algumas métricas para o acompanhamento mais detalhado das refeições
+- Quantidade total de refeições registradas
+- Quantidade total de refeições dentro da dieta e fora da dieta
+- Melhor sequência de refeições dentro da dieta
+- consumo total de refeições totais, fora e dentro da dieta.
+
   
