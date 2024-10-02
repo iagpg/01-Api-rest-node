@@ -5,6 +5,7 @@
 >[!NOTE]
 >Para garantir a consistência do código, foi implementado o **ESLint**, responsável pela padronização e melhoria das práticas de desenvolvimento. utilize o comando `run lint` para formatar o projeto.
 
+
 <h4>O projeto tem como objetivo facilitar o controle de dieta. Cada usuário pode criar, deletar e visualizar suas refeições cadastradas.</h4>
 
 <h3> Requisitos Funcionais </h3>
@@ -21,11 +22,10 @@
 - [x] Deve ser possível identificar os usuários entre as requisições.
  
   </br>
-<h2>Novos Recursos 23/09</h2>
+<h2>Novos Recursos (23/09)</h2>
 <h4>Adicionamos novos recursos e melhorias para facilitar o desenvolvimento:</h4>
 
 - **Arquivo `env.example`**: Modelo de configuração para variáveis de ambiente.
-- **Query Builder `Knex`**: Ferramenta para construir consultas SQL de forma intuitiva e flexível.
 - **Biblioteca `dotenv`**: Agora é possível utilizar variáveis de ambiente via `process.env`.
 - **Validação com `Zod`**: Implementamos a biblioteca `Zod` para garantir a validação das variáveis de ambiente.
 - **Comandos de Migração**: Para executar migrações com TypeScript(com knex), utilize o comando:
@@ -39,7 +39,8 @@ npm run knex -- migrate:make create-document-table
 - adicionado cookies e sessionId para identificar e autorizar a gerenciamento das refeições
 - tratativa de erro caso o acesso seja negado quando é feita uma requisição sem a session_id
 - middlewares adicionados
-- apis de transactions (listar todas as refeições, criar e encontrar refeições específicas.)
+- apis com o connceito crud foram adicionadas
+- teste unitário: testes 2n2 criado
 
 </br>
 <h2> 🔔 última atualização  (2/10) </h2>
@@ -50,5 +51,7 @@ npm run knex -- migrate:make create-document-table
 - Quantidade total de refeições dentro da dieta e fora da dieta
 - Melhor sequência de refeições dentro da dieta
 - consumo total de refeições totais, fora e dentro da dieta.
+- O projeto foi apartado em dois ambientes, desenvolvedor e produção(produção usa Postgre, e o desenvolvimento Sqlite)
+- Deploy do projeto em produção usando o PaS, o [Render](https://www.render.com)
 
   
